@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Button from '@mui/material/Button'
+
 
 const App:React.FC = () => {
 
@@ -16,11 +18,15 @@ const App:React.FC = () => {
 
 const Home:React.FC = () => {
 
-    return <>Home sweet home</>
+    return <>
+        <Button variant="contained">
+            Home sweet home
+        </Button>
+    </>
 }
 
 const About:React.FC = () => {
-    
+
     return <>I know all about that"</>
 }
 
@@ -28,5 +34,5 @@ const Contact:React.FC = () => {
 
     return <>the smoking gun</>
 }
- 
+
 export default App
